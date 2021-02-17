@@ -78,7 +78,8 @@ td {
   min-width: 125px;
   padding: 10px;
   text-align: center;
-  margin: auto;
+  vertical-align:top;
+  /* margin: auto; */
   text-transform: uppercase;
   background: #7e0820;
 
@@ -136,7 +137,8 @@ footer{
   text-align: center;
   color: #FFFFFF;
   min-height: 75px;
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
 }
 
