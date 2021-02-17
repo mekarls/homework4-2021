@@ -23,6 +23,7 @@ tr{
 }
 
 /*END STARTER CODE*/
+/* -moved h1> inside <main> */
 
 body{
   color: #000000;
@@ -30,64 +31,111 @@ body{
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
+  font-family: Andika, sans-serif;
+  background-image: url('../images/pigeon-background.JPEG');
+  background-repeat: no-repeat;
+  background-color: #DDDDDD;
 
-  /*Req 1*/
+  /*Req 1- COMPLETE*/
 }
 
 h1{
   color: #c12258;
   font-size: 2em;
+  text-align: center;
+  line-height: 2;
 
-  /*Req 2*/
+  /*Req 2 -COMPLETE*/
 }
 
 p{
-  /*Req 3*/
+  padding-top: 15px;
+  /*Req 3 -COMPLETE*/
 }
 
 a{
-  /*Req 4*/
+  color: #b21f50;
+  text-decoration-style: wavy;
+  /*Req 4 -COMPLETE*/
 }
 
-/*Req 5*/
+/*Req 5 -come back to*/
 /*Add selector and rule here*/
-
-
-/*Req 6a*/
-td{
-  
+* {
+  border: 3px dashed #417243;
 }
 
-/*Req 6b*/
+/*Req 6a -COMPLETE*/
+td {
+  text-align: center;
+  border-top: 2px solid #000000;
+  padding: 10px;
+}
+
+/*Req 6b -COMPLETE*/
 .colhead{
   color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #7e0820;
 
 }
-/*Req 6c*/
+/*Req 6c -COMPLETE*/
 .rowhead{
-
+  border: 2px solid #000000;
+  border-bottom: none;
+  border-left: none;
 }
 
-/*Req 6d*/
-/*Req 6e*/
-/*Req 6f*/
+/*Req 6d -COMPLETE*/
+tr:nth-child(odd) {
+  background: transparent;
+}
 
+/*Req 6e -COMPLETE*/
+tr:nth-child(even) {
+  background: #d1d1d1;
+}
+/*Req 6f -COMPLETE*/
+tr:hover {
+  background: rgba(126, 8, 32, 0.25)
+}
 
 /*Req 7*/
 table{
     border: 2px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
 
 /*Add selectors and rules here*/
+thead tr:last-child th:last-child {
+  border-top-right-radius: 10px;
+}
 
+tbody tr:last-child th {
+  border-bottom-left-radius: 10px;
+}
 
-/*Req 8*/
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/*Req 8 -COMPLETE*/
 footer{
   width:100%;
   background:#000000;
-  text-align:center;
+  text-align: center;
   color: #FFFFFF;
+  min-height: 75px;
+  position: fixed;
+  bottom: 0;
 }
 
