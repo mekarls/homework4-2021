@@ -79,7 +79,8 @@ td {
   padding: 10px;
   text-transform: uppercase;
   background: #7e0820;
-  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 
 }
 /*Req 6c -COMPLETE*/
